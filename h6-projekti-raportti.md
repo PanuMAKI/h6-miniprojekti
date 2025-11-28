@@ -68,7 +68,6 @@ apache2_service:
 <body>
     <h1>Tervetuloa koulun verkkosivulle!</h1>
     <p>Tämä sivu on jaettu Saltilla.</p>
-    <p>Palvelin: {{ grains['id'] }}</p>
 </body>
 </html>
 ```
