@@ -26,7 +26,7 @@ Määrittelee, mitkä Salt-tilat ajetaan mille koneille
 ```
 
 apache/init.sls \
-pkg.installed: Asentaa apache2-paketin
+pkg.installed: Asentaa apache2-paketin \
 service.running: Varmistaa, että Apache-palvelu on käynnissä
 ```
 
@@ -38,11 +38,11 @@ apache2.service:
     - name: apache2
 ```
 website/init.sls \
-file.managed: Lataa tiedoston Salt-masterilta kohdekoneelle
+file.managed: Lataa tiedoston Salt-masterilta kohdekoneelle \
 
-source: salt://: Etsii tiedoston Saltin tiedostojärjestelmästä
+source: salt://: Etsii tiedoston Saltin tiedostojärjestelmästä \
 
-user/group/mode: Asettaa tiedosto-oikeudet
+user/group/mode: Asettaa tiedosto-oikeudet \
 
 file.directory: Varmistaa, että hakemisto on olemassa
 ```
