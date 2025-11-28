@@ -37,8 +37,6 @@ apache2.service:
     - user: root
     - group: root
     - mode: 644
-    - require:
-      - pkg: apache2
 
 # Varmistetaan että hakemisto on olemassa
 /var/www/html:
