@@ -57,7 +57,6 @@ apache2.service:
 </head>
 <body>
     <h1>Tervetuloa koulun verkkosivulle!</h1>
-    <p>Tämä sivu on jaettu Saltilla.</p>
 </body>
 </html>
 ```
