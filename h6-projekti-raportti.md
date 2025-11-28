@@ -14,31 +14,23 @@ Tehtävän aluksi olimme asentaneet Saltin virtuaalikoneelle. Ohjeet löytyvät 
 *Mitä pitää tehdä:*
 ```
 
-# /srv/salt/top.sls
 - base:
-  'webservers':
+  '*':
     - apache
     - website
 ```
 
 ```
 
-apache/init.sls
-- /srv/salt/apache/init.sls
 apache2:
   pkg.installed
-  service.running:
-    - enable: True
-    - require:
-      - pkg: apache2
 
-apache2_service:
-  service.enabled:
+apache2.service:
+  service.running:
     - name: apache2
 ```
 ```
 
-    # /srv/salt/website/init.stlsls
 /var/www/html/index.html:
   file.managed:
     - source: salt://website/files/index.html
