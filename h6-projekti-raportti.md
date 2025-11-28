@@ -10,3 +10,65 @@ AMD Ryzen 5 7520U with Radeon Graphics (2.80 GHz) \
 Linuxina toimii debian-live-13.1.0-amd64-xfce 
 
 Tehtävän aluksi olimme asentaneet Saltin virtuaalikoneelle. Ohjeet löytyvät aiemmista tehtävistä https://github.com/OlliLuo/palvelinten-hall/blob/main/h1-viisikko.md ja Tero Karvisen ohjeesta https://terokarvinen.com/install-salt-on-debian-13-trixie/
+
+*Mitä pitää tehdä:*
+```
+
+# /srv/salt/top.sls
+- base:
+  'webservers':
+    - apache
+    - website
+```
+
+```
+
+apache/init.sls
+- /srv/salt/apache/init.sls
+apache2:
+  pkg.installed
+  service.running:
+    - enable: True
+    - require:
+      - pkg: apache2
+
+apache2_service:
+  service.enabled:
+    - name: apache2
+```
+```
+
+    # /srv/salt/website/init.stlsls
+/var/www/html/index.html:
+  file.managed:
+    - source: salt://website/files/index.html
+    - user: root
+    - group: root
+    - mode: 644
+    - require:
+      - pkg: apache2
+
+# Varmistetaan että hakemisto on olemassa
+/var/www/html:
+  file.directory:
+    - user: root
+    - group: root
+    - mode: 755
+```
+
+  Esimerkkisivu:
+```
+
+  <!-- /srv/salt/website/files/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Koulun Salt-projekti</title>
+</head>
+<body>
+    <h1>Tervetuloa koulun verkkosivulle!</h1>
+    <p>Tämä sivu on jaettu Saltilla.</p>
+    <p>Palvelin: {{ grains['id'] }}</p>
+</body>
+</html>
+```
