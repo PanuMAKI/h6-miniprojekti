@@ -9,7 +9,7 @@ Lenovon V14 Gen 4 \
 AMD Ryzen 5 7520U with Radeon Graphics (2.80 GHz) \
 Linuxina toimii debian-live-13.1.0-amd64-xfce 
 
-Tehtävän aluksi olimme asentaneet Saltin virtuaalikoneelle. Ohjeet löytyvät aiemmista tehtävistä https://github.com/OlliLuo/palvelinten-hall/blob/main/h1-viisikko.md ja Tero Karvisen ohjeesta https://terokarvinen.com/install-salt-on-debian-13-trixie/
+Tehtävän aluksi olimme asentaneet Saltin kahdelle virtuaalikoneelle. Ohjeet löytyvät aiemmista tehtävistä https://github.com/OlliLuo/palvelinten-hall/blob/main/h1-viisikko.md ja Tero Karvisen ohjeesta https://terokarvinen.com/install-salt-on-debian-13-trixie/ Toiselle koneista asennettiin salt-master ja toiselle salt-minion. 
 
 *Mitä pitää tehdä:*
 ```
