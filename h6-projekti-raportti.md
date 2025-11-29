@@ -9,7 +9,11 @@ Lenovon V14 Gen 4 \
 AMD Ryzen 5 7520U with Radeon Graphics (2.80 GHz) \
 Linuxina toimii debian-live-13.1.0-amd64-xfce 
 
-Tehtävän aluksi olimme asentaneet Saltin kahdelle virtuaalikoneelle. Ohjeet löytyvät aiemmista tehtävistä https://github.com/OlliLuo/palvelinten-hall/blob/main/h1-viisikko.md ja Tero Karvisen ohjeesta https://terokarvinen.com/install-salt-on-debian-13-trixie/ Toiselle koneista asennettiin salt-master ja toiselle salt-minion. 
+Tehtävän aluksi olimme asentaneet Saltin kahdelle virtuaalikoneelle. 
+
+![Virtuaalikoneet](Virtuaalikoneet.png)
+
+Ohjeet löytyvät aiemmista tehtävistä https://github.com/OlliLuo/palvelinten-hall/blob/main/h1-viisikko.md ja Tero Karvisen ohjeesta https://terokarvinen.com/install-salt-on-debian-13-trixie/ Toiselle koneista asennettiin salt-master ja toiselle salt-minion. 
 
 Seuraavaksi teimme seuraavat tiedostot:
 
@@ -74,7 +78,9 @@ Nämä tiedostot löytyvät  github repositorysta https://github.com/OlliLuo/Kou
 Seuraavaksi ladataan master koneella tämä zip-tiedosto ja puretaan pakkaus. \
 Tämän jälkeen masterilla syötetään seuraava komento:
 ```
-cp -r --no-preserve=mode /home/"käyttäjä"/Downloads/koulutyo-main/. /srv/salt/
+sudo cp -r --no-preserve=mode /home/"käyttäjä"/Downloads/Koulutyo-main/. /srv/salt/
 ```
 **Salt** kansio pitää itse luoda. 
+
+!tiedostot-siirretty](tiedostot-siirretty.png)
 
