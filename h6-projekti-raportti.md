@@ -46,25 +46,11 @@ apache2.service:
 file.managed: Lataa tiedoston Salt-masterilta kohdekoneelle 
 
 source: salt://: Etsii tiedoston Saltin tiedostojärjestelmästä 
-
-user/group/mode: Asettaa tiedosto-oikeudet 
-
-file.directory: Varmistaa, että hakemisto on olemassa
 ```
 
 /var/www/html/index.html:
   file.managed:
     - source: salt://website/files/index.html
-    - user: root
-    - group: root
-    - mode: 644
-
-# Varmistetaan että hakemisto on olemassa
-/var/www/html:
-  file.directory:
-    - user: root
-    - group: root
-    - mode: 755
 ```
 **Website kansioon files-kansio mihin index.html** \
 Tähän loimme esimerkkisivun mikä korvaa oletussivun.
