@@ -92,3 +92,7 @@ sudo salt '"minionNimi"' state.apply
 ![file-managed-html](file-managed-html.png)
 ![summary](summary.png)
 
+Tärkistimme vielä minionin koneelta että apache oletussivu oli muuttunut.
+
+![Kotisivu](Kotisivu.png)
+Olihan se!
