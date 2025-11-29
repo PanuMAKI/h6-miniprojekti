@@ -11,7 +11,9 @@ Linuxina toimii debian-live-13.1.0-amd64-xfce
 
 Tehtävän aluksi olimme asentaneet Saltin kahdelle virtuaalikoneelle. Ohjeet löytyvät aiemmista tehtävistä https://github.com/OlliLuo/palvelinten-hall/blob/main/h1-viisikko.md ja Tero Karvisen ohjeesta https://terokarvinen.com/install-salt-on-debian-13-trixie/ Toiselle koneista asennettiin salt-master ja toiselle salt-minion. 
 
-top.sls tiedosto:
+Seuraavaksi teimme seuraavat tiedostot:
+
+**top.sls tiedosto** \
 Määrittelee, mitkä Salt-tilat ajetaan mille koneille
 
 - apache: Ajaa ensin apache/init.sls
@@ -25,7 +27,8 @@ Määrittelee, mitkä Salt-tilat ajetaan mille koneille
     - website
 ```
 
-apache/init.sls \
+**Apache kansio missä init.sls**
+
 pkg.installed: Asentaa apache2-paketin \
 service.running: Varmistaa, että Apache-palvelu on käynnissä
 ```
@@ -37,7 +40,9 @@ apache2.service:
   service.running:
     - name: apache2
 ```
-website/init.sls \
+
+**Website kansio missä init.sls** \
+
 file.managed: Lataa tiedoston Salt-masterilta kohdekoneelle 
 
 source: salt://: Etsii tiedoston Saltin tiedostojärjestelmästä 
@@ -61,6 +66,8 @@ file.directory: Varmistaa, että hakemisto on olemassa
     - group: root
     - mode: 755
 ```
+**Website kansioon files-kansio mihin index.html** \
+Tähän loimme esimerkkisivun mikä korvaa oletussivun.
 
   Esimerkkisivu:
   
@@ -77,3 +84,5 @@ file.directory: Varmistaa, että hakemisto on olemassa
 </body>
 </html>
 ```
+Nämä tiedostot löytyvät tästä github repositorysta. 
+Seuraavaksi ladataan master koneella tämä zip-tiedosto ja puretaan pakkaus. 
