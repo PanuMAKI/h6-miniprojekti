@@ -70,7 +70,7 @@ Tähän loimme esimerkkisivun mikä korvaa oletussivun.
 </body>
 </html>
 ```
-Nämä tiedostot löytyvät  github repositorysta . 
+Nämä tiedostot löytyvät  github repositorysta https://github.com/OlliLuo/Koulutyo.git \ 
 Seuraavaksi ladataan master koneella tämä zip-tiedosto ja puretaan pakkaus. \
 Tämän jälkeen masterilla syötetään seuraava komento:
 ```
