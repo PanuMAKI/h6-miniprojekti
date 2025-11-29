@@ -70,5 +70,11 @@ Tähän loimme esimerkkisivun mikä korvaa oletussivun.
 </body>
 </html>
 ```
-Nämä tiedostot löytyvät tästä github repositorysta. 
-Seuraavaksi ladataan master koneella tämä zip-tiedosto ja puretaan pakkaus. 
+Nämä tiedostot löytyvät  github repositorysta . 
+Seuraavaksi ladataan master koneella tämä zip-tiedosto ja puretaan pakkaus. \
+Tämän jälkeen masterilla syötetään seuraava komento:
+```
+cp -r --no-preserve=mode /home/"käyttäjä"/Downloads/koulutyo-main/. /srv/salt/
+```
+**Salt** kansio pitää itse luoda. 
+
