@@ -82,5 +82,5 @@ sudo cp -r --no-preserve=mode /home/"käyttäjä"/Downloads/Koulutyo-main/. /srv
 ```
 **Salt** kansio pitää itse luoda. 
 
-!tiedostot-siirretty](tiedostot-siirretty.png)
+![tiedostot-siirretty](tiedostot-siirretty.png)
 
