@@ -45,7 +45,7 @@ apache2.service:
     - name: apache2
 ```
 
-**Website kansio missä init.sls** \
+**Website kansio missä init.sls** 
 
 file.managed: Lataa tiedoston Salt-masterilta kohdekoneelle 
 
@@ -74,7 +74,7 @@ Tähän loimme esimerkkisivun mikä korvaa oletussivun.
 </body>
 </html>
 ```
-Nämä tiedostot löytyvät  github repositorysta https://github.com/OlliLuo/Koulutyo.git \ 
+Nämä tiedostot löytyvät  github repositorysta https://github.com/OlliLuo/Koulutyo.git  
 Seuraavaksi ladataan master koneella tämä zip-tiedosto ja puretaan pakkaus. \
 Tämän jälkeen masterilla syötetään seuraava komento:
 ```
