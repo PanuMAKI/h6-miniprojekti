@@ -84,3 +84,11 @@ sudo cp -r --no-preserve=mode /home/"käyttäjä"/Downloads/Koulutyo-main/. /srv
 
 ![tiedostot-siirretty](tiedostot-siirretty.png)
 
+Tämän jälkeen oli aika ajaa seuraava komento:
+```
+sudo salt '"minionNimi"' state.apply
+```
+![apache2](apache2.png)
+![file-managed-html](file-managed-html.png)
+![summary](summary.png)
+
