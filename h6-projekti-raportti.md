@@ -26,7 +26,6 @@ Määrittelee, mitkä Salt-tilat ajetaan mille koneille
 
 - website: Sitten website/init.sls
 ```
-
 - base:
   '*':
     - apache
@@ -38,7 +37,6 @@ Määrittelee, mitkä Salt-tilat ajetaan mille koneille
 pkg.installed: Asentaa apache2-paketin \
 service.running: Varmistaa, että Apache-palvelu on käynnissä
 ```
-
 apache2:
   pkg.installed
 
@@ -53,7 +51,6 @@ file.managed: Lataa tiedoston Salt-masterilta kohdekoneelle
 
 source: salt://: Etsii tiedoston Saltin tiedostojärjestelmästä 
 ```
-
 /var/www/html/index.html:
   file.managed:
     - source: salt://website/files/index.html
@@ -64,7 +61,6 @@ Tähän loimme esimerkkisivun mikä korvaa oletussivun.
   Esimerkkisivu:
   
 ```
-
   <!-- /srv/salt/website/files/index.html -->
 <!DOCTYPE html>
 <html>
