@@ -96,3 +96,10 @@ Tärkistimme vielä minionin koneelta että apache oletussivu oli muuttunut.
 
 ![Kotisivu](Kotisivu.png)
 Olihan se!
+
+### Lähteet
+
+Luomajärvi 2025: h1-viisikko https://github.com/OlliLuo/palvelinten-hall/blob/main/h1-viisikko.md \
+Karvinen 2021: Install Salt on Debian 13 Trixie https://aapotavio.com/configuration-management-systems/h5-miniprojekti/ \
+Myllykangas 2021: Palvelinten hallinta miniprojekti https://topiashh.wordpress.com/2021/12/05/palvelinten-hallinta-miniprojekti/ \
+salt.modules.apache https://docs.saltproject.io/en/master/ref/modules/all/salt.modules.apache.html
