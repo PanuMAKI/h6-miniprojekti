@@ -1,6 +1,8 @@
 ## H6 Miniprojekti
 
-**Projektimme idea:**  Laitamme Saltilla esim. koulun verkkosivu/yksinkertainen HTML-sivu kaikille koneille \
+Tekijät: Olli Luomajärvi ja Panu Mäki \
+
+**Projektimme idea:**  Laitamme Saltilla /yksinkertaisen HTML-sivun kaikille koneille \
 Sisällytämme tähän myös Apache -palvelimen asennuksen ja konfiguraation
 
 Käytämme tähän kannettavaa tietokonetta: \
