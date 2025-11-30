@@ -1,6 +1,6 @@
 ## H6 Miniprojekti
 
-Tekijät: Olli Luomajärvi ja Panu Mäki \
+Tekijät: Olli Luomajärvi ja Panu Mäki
 
 **Projektimme idea:**  Laitamme Saltilla /yksinkertaisen HTML-sivun kaikille koneille \
 Sisällytämme tähän myös Apache -palvelimen asennuksen ja konfiguraation
